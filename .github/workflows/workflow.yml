@@ -25,7 +25,7 @@ jobs:
         run: dotnet tool install Skyline.DataMiner.CICD.Tools.Packager --global
         shell: pwsh
       - name: create
-        run:  dataminer-package-create dmapp "." -t automation -v 1.0.1 -o "." -n package.dmapp
+        run:  dataminer-package-create dmapp "." -t automation -v 1.0.1 -o "." -n package
       - name: save artifact
         uses: actions/upload-artifact@v4
         with:

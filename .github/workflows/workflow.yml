@@ -1,0 +1,33 @@
+name: DataMiner CICD Automation
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: []
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+.[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+.[0-9]+-**"
+  pull_request:
+    branches: []
+    
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  buildPackage:
+    name: createPackage
+    runs-on: windows-latest
+    steps:
+      - name: Install SDKChecker
+        run: dotnet tool install Skyline.DataMiner.CICD.Tools.Packager --global
+        shell: pwsh
+      - name: create
+        run:  dataminer-package-create dmapp "${{ github.workspace }}" -t automation -v 1.0.1 -o "${{ github.workspace }}" -n package.dmapp
+      - name: save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release
+          path: package.dmapp
+      

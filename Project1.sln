@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Internal", "Internal", "{0C81908C-8474-40B9-9CD9-0D8C73168A8E}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\.editorconfig = Internal\.editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{E2CD90D2-B353-4E83-91A1-6CC55566DA00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dlls", "Dlls", "{15359066-5CF7-42A5-A86F-0111E6BAC538}"
+	ProjectSection(SolutionItems) = preProject
+		Dlls\ABOUT.md = Dlls\ABOUT.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompanionFiles", "CompanionFiles", "{A2FB3B07-D0B2-41C8-BDF8-DDD5FA02F428}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Skyline DataMiner", "Skyline DataMiner", "{277BFE45-1469-4E0D-A8A9-73B91B98B04D}"
+	ProjectSection(SolutionItems) = preProject
+		CompanionFiles\Skyline DataMiner\AboutThisFolder.md = CompanionFiles\Skyline DataMiner\AboutThisFolder.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{9A1DB2FC-AD62-4AEF-B017-7422F23956A9}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\ABOUT.md = Documentation\ABOUT.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F8938D60-51A0-4880-9CFC-19C66379BB5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code Analysis", "Code Analysis", "{61C8D454-A94D-4520-B1B6-3F1D1F73DF89}"
+	ProjectSection(SolutionItems) = preProject
+		Internal\Code Analysis\qaction-debug.ruleset = Internal\Code Analysis\qaction-debug.ruleset
+		Internal\Code Analysis\qaction-release.ruleset = Internal\Code Analysis\qaction-release.ruleset
+		Internal\Code Analysis\stylecop.json = Internal\Code Analysis\stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{7E778657-2B20-460A-A73F-C24B7328F24E}"
+	ProjectSection(SolutionItems) = preProject
+		Test.xml = Test.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Actions", "Actions", "{2886B17E-5A01-4106-BDC3-A8A49C1E6BD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_1", "Test_1\Test_1.csproj", "{B2965796-78F0-4027-A5C6-CAA21566FDD2}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedProject1", "SharedProject1\SharedProject1.shproj", "{69E8B045-F36D-43BD-8019-0377342DCA1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2965796-78F0-4027-A5C6-CAA21566FDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2965796-78F0-4027-A5C6-CAA21566FDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2965796-78F0-4027-A5C6-CAA21566FDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2965796-78F0-4027-A5C6-CAA21566FDD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{277BFE45-1469-4E0D-A8A9-73B91B98B04D} = {A2FB3B07-D0B2-41C8-BDF8-DDD5FA02F428}
+		{61C8D454-A94D-4520-B1B6-3F1D1F73DF89} = {0C81908C-8474-40B9-9CD9-0D8C73168A8E}
+		{7E778657-2B20-460A-A73F-C24B7328F24E} = {E2CD90D2-B353-4E83-91A1-6CC55566DA00}
+		{2886B17E-5A01-4106-BDC3-A8A49C1E6BD0} = {7E778657-2B20-460A-A73F-C24B7328F24E}
+		{B2965796-78F0-4027-A5C6-CAA21566FDD2} = {2886B17E-5A01-4106-BDC3-A8A49C1E6BD0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B717ACC8-E03E-4F2A-9E75-EB4F6AD25EF4}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedProject1\SharedProject1.projitems*{69e8b045-f36d-43bd-8019-0377342dca1f}*SharedItemsImports = 13
+		SharedProject1\SharedProject1.projitems*{b2965796-78f0-4027-a5c6-caa21566fdd2}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

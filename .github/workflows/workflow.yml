@@ -20,6 +20,7 @@ jobs:
     name: createPackage
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Install SDKChecker
         run: dotnet tool install Skyline.DataMiner.CICD.Tools.Packager --global
         shell: pwsh
